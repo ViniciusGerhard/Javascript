@@ -1,17 +1,9 @@
 // ============================================================
-// Atividade 01 — Sistema de Cadastro de Itens (Roblox)
-// Protótipo de terminal (Node.js) para cadastro, validação
-// e listagem de itens de um jogo Roblox.
-// ============================================================
-
-
-// ============================================================
 // ETAPA 1 — Ficha do Item (variáveis, tipos e template strings)
 // ============================================================
 
 // Declaração das variáveis que representam um item do jogo.
 // Usamos "const" por padrão, pois esses valores não serão
-// reatribuídos ao longo do programa.
 const nomeItem = 'Espada das Sombras';
 const precoItem = 250;
 const raridadeItem = 'Raro'; // "Comum", "Raro" ou "Lendário"
