@@ -9,7 +9,9 @@ const precoItem = 250;
 const raridadeItem = 'Raro'; // "Comum", "Raro" ou "Lendário"
 const quantidadeEstoque = 12;
 
+  
 // Exibição da "ficha do item" usando template strings (crases).
+//console.log aparecer no console
 console.log('=== FICHA DO ITEM ===');
 console.log(`Nome: ${nomeItem}`);
 console.log(`Preço: R$ ${precoItem}`);
@@ -24,6 +26,7 @@ console.log(''); // linha em branco para separar as etapas no console
 
 // Validação: o preço não pode ser negativo.
 // Usamos um operador de comparação (>=) para checar a regra.
+//if (se) else (senao)
 if (precoItem >= 0) {
   console.log('Preço válido.');
 } else {
@@ -32,11 +35,12 @@ if (precoItem >= 0) {
 
 // Classificação automática do item por faixa de preço,
 // usando if / else if / else.
+//let a variavel pode ser mudada
 let categoriaPorPreco;
 
 if (precoItem < 100) {
   categoriaPorPreco = 'Comum';
-} else if (precoItem >= 100 && precoItem < 500) {
+} else if (precoItem >= 100 && precoItem < 500) { //&& é uma condição E
   categoriaPorPreco = 'Raro';
 } else {
   categoriaPorPreco = 'Lendário';
@@ -46,6 +50,7 @@ console.log(`Categoria calculada pelo preço: ${categoriaPorPreco}`);
 
 // Operador ternário: define se o item está "em destaque"
 // (verdadeiro quando o preço é maior que 500).
+// const a variavel nao pode ser mudada depois
 const emDestaque = precoItem > 500 ? true : false;
 console.log(`Em destaque: ${emDestaque}`);
 
@@ -63,11 +68,12 @@ console.log('');
 console.log('=== CADASTRO EM LOTE ===');
 
 // Simula o cadastro de 5 itens usando um laço for com contador.
+//for laço de repetição 
 for (let i = 0; i < 5; i++) {
   const numeroDoItem = i + 1; // relatório numerado a partir de 1
-  console.log(`Item ${numeroDoItem} cadastrado com sucesso!`);
+  console.log(`Item ${numeroDoItem} cadastrado com sucesso!`);//juntar textos com valores ${
 
-  // Operador módulo (%): a cada índice par do laço (i),
+  // Operador módulo (%) é o resto da divisao: a cada índice par do laço (i),
   // exibe uma mensagem extra de promoção da semana.
   if (i % 2 === 0) {
     console.log('Item em promoção da semana!');
@@ -85,6 +91,7 @@ console.log('=== CONTROLE DE ESTOQUE ===');
 // Simula a venda de um item específico usando um laço while.
 // Partimos de 12 unidades em estoque e vendemos 2 por vez,
 // até o estoque chegar a 0.
+//while laço de repetição enquanto
 let estoqueAtual = 12;
 
 while (estoqueAtual > 0) {
@@ -103,6 +110,7 @@ console.log('');
 console.log('=== CATÁLOGO DE ITENS ===');
 
 // Lista simples (array) com o nome de 5 itens do jogo.
+//const a variavel nao pode ser mudada depois
 const catalogo = [
   'Espada das Sombras',
   'Asas Douradas',
