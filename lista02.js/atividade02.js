@@ -7,7 +7,7 @@ const elemetosFake =
     },
     {
     tagName:'H1',
-    Style: {color: 'red', display: 'block'},
+    style: {color: 'red', display: 'block'},
     classList:['title']
     },
     {
@@ -18,8 +18,10 @@ const elemetosFake =
 ];
 
  for (const chave in elemetosFake){
-    if (style = 'blue'){
-        console.log("O elemento" [tagName] "é azul ");
-    } else {"O elemento [tagName"}
+    if (elemetosFake[chave].style.color === 'blue'){
+        console.log("O elemento " + elemetosFake[chave].tagName + " é azul ");
+    } else {
+        console.log("O elemento " + elemetosFake[chave].tagName + " não é azul ");
+    }
     console.log(chave, '->', elemetosFake[chave]);
  }
