@@ -16,4 +16,11 @@ const elementosFake = [
     }
   ];
 
-    elementosFake.forEach(elemento => console.log(elemento.tagName))
+    let quantidade = 0
+    
+    for (const quant_classes in elementosFake)
+        quantidade += elementosFake [quant_classes].classList.length
+    elementosFake.forEach(elemento => console.log(`Tag: ${elemento.tagName} possui as classes: ${elemento.classList.join(',')}`))
+    console.log (`No total, possui ${quantidade} classes`)
+    
+   

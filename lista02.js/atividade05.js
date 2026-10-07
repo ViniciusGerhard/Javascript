@@ -16,4 +16,4 @@ const elementosFake = [
     }
   ];
 
-    elementosFake.forEach(elemento => console.log(elemento.tagName))
+    elementosFake.forEach(elemento => console.log(`${elemento.tagName} e possui a classe, ${elemento.classList}`))
